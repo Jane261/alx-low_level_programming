@@ -1,21 +1,19 @@
-#include"main.h"
-
+#include "main.h"
 /**
- * main - Entry point
+ * main - function that prints pu
+ * tchar
  *
- * Description: prints _putchar using putchar prototype
- *
- * Return: Always 0 (Success)
-*/
+ * Return: Return 0
+ */
 
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
-
-	for (ch = 0; ch < 8; ++ch)
-		_putchar(str[ch]);
+	char text[9] = "_putchar";
+		int i = 0;
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(text[i]);
+	}
 	_putchar('\n');
-
 	return (0);
 }
